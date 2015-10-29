@@ -15,7 +15,8 @@ public class SelectionSort<E extends Comparable<E>>  {
 			min=i;
 			for(int j=i+1;j<sortArray.size();j++)
 			{				
-				if(sortArray.get(j).compareTo(sortArray.get(min))<0)
+				if(sortArray.get(j).
+						compareTo(sortArray.get(min))<0)
 					{
 					min=j;
 					}
@@ -35,7 +36,8 @@ public class SelectionSort<E extends Comparable<E>>  {
 		a=b;
 		b=temp;
 	}
-	public <E> void swap(List<E> a, int i, int j) {
+	private <E> void swap(List<E> a,
+			int i, int j) {
         E temp = a.get(i);
         a.set(i,a.get(j));
         a.set(j, temp);
